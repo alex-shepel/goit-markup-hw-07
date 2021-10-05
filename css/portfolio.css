@@ -11,42 +11,27 @@ ul {
 /* portfolio content */
 
 .content {
-	padding-top: var(--padding-section);
-	padding-bottom: var(--padding-section);
+	padding: var(--padding-section);
 }
 
-.content-title {
-	text-align: center;
-}
-
-.content-filter {
-	margin-top: 0;
-	margin-bottom: 50px;
-	display: flex;
-	justify-content: center;
-	gap: 8px;
-	text-align: center;
-	transition: box-shadow var(--anim-props);
-}
-
-.content-filter > .clients__icon:hover,
-.content-filter > .clients__icon:focus {
-	box-shadow: var(--primary-shadow);
-}
-
-.content-table {
+.content__table {
 	margin-top: 0;
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--grid-gap);
 }
 
-.content-image-container {
+.content__item:hover,
+.content__item:focus {
+	box-shadow: var(--primary-shadow);
+}
+
+.content__img-wrapper {
 	position: relative;
 	overflow: hidden;
 }
 
-.content-modal-text {
+.content__modal-text {
 	position: absolute;
 	display: block;
 	top: 0;
@@ -66,15 +51,16 @@ ul {
 	opacity: 0;
 	transform: translateY(100%);
 	transition: opacity var(--anim-props), transform var(--anim-props);
+	cursor: pointer;
 }
 
-.content-table .clients__icon:hover .content-modal-text,
-.content-table .clients__icon:focus .content-modal-text {
+.content__item:hover .content__modal-text,
+.content__item:focus .content__modal-text {
 	opacity: 1;
 	transform: translateY(0);
 }
 
-.content-info {
+.content__info {
 	padding: 20px 24px;
 
 	border-right: 1px solid var(--border-color);
@@ -82,7 +68,7 @@ ul {
 	border-left: 1px solid var(--border-color);
 }
 
-.content-name {
+.content__name {
 	margin-top: 0;
 	margin-bottom: 4px;
 
@@ -93,28 +79,25 @@ ul {
 	letter-spacing: 0.06em;
 }
 
-.content-type {
+.content__type {
+	margin: 0;
 	font-size: 16px;
 	line-height: 1.9;
 }
 
-/* buttons */
+/* content filter */
 
-.btn-secondary {
-	padding: 6px 22px;
-
-	color: var(--font-bold-color);
-	background-color: var(--bg-light-gray-color);
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.6;
-	transition: color var(--anim-props), background-color var(--anim-props), box-shadow var(--anim-props);
+.filter {
+	margin-top: 0;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	text-align: center;
+	transition: box-shadow var(--anim-props);
 }
 
-.btn-secondary:hover,
-.btn-secondary:focus,
-.btn-secondary.active {
-	color: var(--font-inversed-color);
-	background-color: var(--accent-color);
+.filter__item:hover,
+.filter__item:focus {
 	box-shadow: var(--primary-shadow);
 }

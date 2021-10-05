@@ -346,3 +346,22 @@ body {
 .btn--primary:focus {
 	background-color: var(--accent-focus-color);
 }
+
+.btn--secondary {
+	padding: 6px 22px;
+
+	color: var(--font-bold-color);
+	background-color: var(--bg-light-gray-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	transition: color var(--anim-props), background-color var(--anim-props), box-shadow var(--anim-props);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus,
+.btn--secondary.active {
+	color: var(--font-inversed-color);
+	background-color: var(--accent-color);
+	box-shadow: var(--primary-shadow);
+}
