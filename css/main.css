@@ -397,7 +397,7 @@ ul {
 	margin: 0 auto;
 }
 
-.modal-form > .btn-close {
+.modal-form > .btn--close {
 	position: absolute;
 	top: 8px;
 	right: 8px;
