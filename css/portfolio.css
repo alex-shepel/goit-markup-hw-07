@@ -29,8 +29,8 @@ ul {
 	transition: box-shadow var(--anim-props);
 }
 
-.content-filter > .item:hover,
-.content-filter > .item:focus {
+.content-filter > .clients__icon:hover,
+.content-filter > .clients__icon:focus {
 	box-shadow: var(--primary-shadow);
 }
 
@@ -68,8 +68,8 @@ ul {
 	transition: opacity var(--anim-props), transform var(--anim-props);
 }
 
-.content-table .item:hover .content-modal-text,
-.content-table .item:focus .content-modal-text {
+.content-table .clients__icon:hover .content-modal-text,
+.content-table .clients__icon:focus .content-modal-text {
 	opacity: 1;
 	transform: translateY(0);
 }

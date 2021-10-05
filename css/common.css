@@ -251,6 +251,7 @@ body {
 
 .sm-contacts__list {
 	display: flex;
+	justify-content: center;
 	gap: 10px;
 }
 
@@ -260,19 +261,22 @@ body {
 	width: 44px;
 	padding: 12px;
 	border-radius: 50%;
-	fill: var(--font-inversed-color);
 	background-color: var(--bg-white-transparent-color);
-	transition: background-color var(--anim-props);
+	transition: background-color var(--anim-props), fill var(--anim-props);
+}
+
+.sm-contacts__link--studio {
+	fill: var(--font-inversed-color);
+}
+
+.sm-contacts__link--personal {
+	fill: var(--icons-primary-color);
 }
 
 .sm-contacts__link:hover,
 .sm-contacts__link:focus {
 	background-color: var(--accent-color);
-}
-
-.sm-contacts__icon {
-	height: 20px;
-	width: 20px;
+	fill: var(--font-inversed-color);
 }
 
 /* subscribe */
@@ -317,8 +321,7 @@ body {
 
 /* buttons */
 
-.btn,
-.btn--close {
+.btn {
 	border: 0;
 	border-radius: 4px;
 	font-family: inherit;
