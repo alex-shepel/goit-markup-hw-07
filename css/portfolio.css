@@ -1,0 +1,120 @@
+/* custom CSS properties */
+
+ul {
+	/* content columns */
+	--table-cols: 3;
+
+	--table-gap: calc((var(--table-cols) - 1) * var(--grid-gap));
+	--table-basis: calc((100% - var(--table-gap)) / var(--table-cols));
+}
+
+/* portfolio content */
+
+.content {
+	padding-top: var(--padding-section);
+	padding-bottom: var(--padding-section);
+}
+
+.content-title {
+	text-align: center;
+}
+
+.content-filter {
+	margin-top: 0;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	text-align: center;
+	transition: box-shadow var(--anim-props);
+}
+
+.content-filter > .item:hover,
+.content-filter > .item:focus {
+	box-shadow: var(--primary-shadow);
+}
+
+.content-table {
+	margin-top: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--grid-gap);
+}
+
+.content-image-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.content-modal-text {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 63px 24px;
+
+	height: 100%;
+	width: 100%;
+
+	color: var(--font-inversed-color);
+	font-size: 18px;
+	line-height: 1.6;
+
+	background-color: rgba(33, 150, 243, 0.9);
+	opacity: 0;
+	transform: translateY(100%);
+	transition: opacity var(--anim-props), transform var(--anim-props);
+}
+
+.content-table .item:hover .content-modal-text,
+.content-table .item:focus .content-modal-text {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.content-info {
+	padding: 20px 24px;
+
+	border-right: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color);
+}
+
+.content-name {
+	margin-top: 0;
+	margin-bottom: 4px;
+
+	color: var(--font-bold-color);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.content-type {
+	font-size: 16px;
+	line-height: 1.9;
+}
+
+/* buttons */
+
+.btn-secondary {
+	padding: 6px 22px;
+
+	color: var(--font-bold-color);
+	background-color: var(--bg-light-gray-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	transition: color var(--anim-props), background-color var(--anim-props), box-shadow var(--anim-props);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.active {
+	color: var(--font-inversed-color);
+	background-color: var(--accent-color);
+	box-shadow: var(--primary-shadow);
+}
