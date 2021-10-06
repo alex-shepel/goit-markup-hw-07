@@ -10,8 +10,8 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
-		<link rel="stylesheet" href="css/common.css" />
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
+		<link rel="stylesheet" href="./css/index.min.css" />
 
 		<!-- fonts -->
 		<link
@@ -19,6 +19,7 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 		/>
 	</head>
+
 	<body>
 		<header class="page-header">
 			<div class="container page-header__container">
@@ -70,44 +71,54 @@
 				</div>
 			</section>
 
-			<section class="features-and-job">
+			<section class="padding-unified">
 				<div class="container">
 					<div class="features">
 						<h2 class="visually-hidden">Наши преимущества</h2>
 						<ul class="features__list">
 							<li class="features__item">
 								<div class="features__icon">
-									<svg height="70" width="70"><use href="./images/icons.svg#antenna"></use></svg>
+									<svg height="70" width="70">
+										<use href="./images/icons.svg#antenna"></use>
+									</svg>
 								</div>
 								<h3 class="features__title">Внимание к деталям</h3>
-								<p class="no-margin">
+								<p class="features__description">
 									Идейные соображения, а также начало повседневной работы по формированию позиции.
 								</p>
 							</li>
 							<li class="features__item">
 								<div class="features__icon">
-									<svg height="70" width="70"><use href="./images/icons.svg#clock"></use></svg>
+									<svg height="70" width="70">
+										<use href="./images/icons.svg#clock"></use>
+									</svg>
 								</div>
 								<h3 class="features__title">Пунктуальность</h3>
-								<p class="no-margin">
+								<p class="features__description">
 									Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
 								</p>
 							</li>
 							<li class="features__item">
 								<div class="features__icon">
-									<svg height="70" width="70"><use href="./images/icons.svg#diagram"></use></svg>
+									<svg height="70" width="70">
+										<use href="./images/icons.svg#diagram"></use>
+									</svg>
 								</div>
 								<h3 class="features__title">Планирование</h3>
-								<p class="no-margin">
+								<p class="features__description">
 									Равным образом консультация с широким активом в значительной степени обуславливает.
 								</p>
 							</li>
 							<li class="features__item">
 								<div class="features__icon">
-									<svg height="70" width="70"><use href="./images/icons.svg#astronaut"></use></svg>
+									<svg height="70" width="70">
+										<use href="./images/icons.svg#astronaut"></use>
+									</svg>
 								</div>
 								<h3 class="features__title">Современные технологии</h3>
-								<p class="no-margin">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+								<p class="features__description">
+									Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+								</p>
 							</li>
 						</ul>
 					</div>
@@ -132,7 +143,7 @@
 				</div>
 			</section>
 
-			<section class="team">
+			<section class="team padding-unified">
 				<div class="container">
 					<h2 class="section-title">Наша команда</h2>
 					<ul class="team__list">
@@ -146,7 +157,9 @@
 										<ul class="sm-contacts__list">
 											<li>
 												<a class="sm-contacts__link sm-contacts__link--personal" href="https://instagram.com/">
-													<svg height="20" width="20"><use href="./images/icons.svg#instagram"></use></svg>
+													<svg height="20" width="20">
+														<use href="./images/icons.svg#instagram"></use>
+													</svg>
 												</a>
 											</li>
 											<li>
@@ -184,7 +197,9 @@
 									<ul class="sm-contacts__list">
 										<li>
 											<a class="sm-contacts__link sm-contacts__link--personal" href="https://instagram.com/">
-												<svg height="20" width="20"><use href="./images/icons.svg#instagram"></use></svg>
+												<svg height="20" width="20">
+													<use href="./images/icons.svg#instagram"></use>
+												</svg>
 											</a>
 										</li>
 										<li>
@@ -221,7 +236,9 @@
 									<ul class="sm-contacts__list">
 										<li>
 											<a class="sm-contacts__link sm-contacts__link--personal" href="https://instagram.com/">
-												<svg height="20" width="20"><use href="./images/icons.svg#instagram"></use></svg>
+												<svg height="20" width="20">
+													<use href="./images/icons.svg#instagram"></use>
+												</svg>
 											</a>
 										</li>
 										<li>
@@ -258,7 +275,9 @@
 									<ul class="sm-contacts__list">
 										<li>
 											<a class="sm-contacts__link sm-contacts__link--personal" href="https://instagram.com/">
-												<svg height="20" width="20"><use href="./images/icons.svg#instagram"></use></svg>
+												<svg height="20" width="20">
+													<use href="./images/icons.svg#instagram"></use>
+												</svg>
 											</a>
 										</li>
 										<li>
@@ -290,7 +309,7 @@
 				</div>
 			</section>
 
-			<section class="clients">
+			<section class="clients padding-unified">
 				<div class="container">
 					<h2 class="section-title">Постоянные клиенты</h2>
 					<ul class="clients__list">
@@ -332,33 +351,33 @@
 				<div class="modal">
 					<h2 class="modal__title">Оставьте данные и мы перезвоним</h2>
 
-					<form class="form">
-						<label class="form__label" for="name">Имя</label>
-						<div class="form__input-wrapper">
-							<input class="form__input" type="text" id="name" />
-							<svg class="form__icon">
+					<form class="service-order">
+						<label class="service-order__label" for="name">Имя</label>
+						<div class="service-order__input-wrapper">
+							<input class="service-order__input" type="text" id="name" />
+							<svg class="service-order__icon">
 								<use href="./images/icons.svg#form-person"></use>
 							</svg>
 						</div>
 
-						<label class="form__label" for="phone">Телефон</label>
-						<div class="form__input-wrapper">
-							<input class="form__input" type="tel" id="phone" />
-							<svg class="form__icon">
+						<label class="service-order__label" for="phone">Телефон</label>
+						<div class="service-order__input-wrapper">
+							<input class="service-order__input" type="tel" id="phone" />
+							<svg class="service-order__icon">
 								<use href="./images/icons.svg#form-handset"></use>
 							</svg>
 						</div>
 
-						<label class="form__label" for="mail">Почта</label>
-						<div class="form__input-wrapper">
-							<input class="form__input" type="email" id="mail" />
-							<svg class="form__icon">
+						<label class="service-order__label" for="mail">Почта</label>
+						<div class="service-order__input-wrapper">
+							<input class="service-order__input" type="email" id="mail" />
+							<svg class="service-order__icon">
 								<use href="./images/icons.svg#form-envelop"></use>
 							</svg>
 						</div>
 
-						<label class="form__label" for="comment">Комментарий</label>
-						<textarea class="form__input form__input--textarea" id="comment" placeholder="Введите текст"></textarea>
+						<label class="service-order__label" for="comment">Комментарий</label>
+						<textarea class="service-order__input service-order__input--textarea" id="comment" placeholder="Введите текст"></textarea>
 
 						<label class="policy">
 							<input class="policy__checkbox" type="checkbox" name="policy-confirmed" />
@@ -367,7 +386,7 @@
 							<a class="policy__link" href="">Условия договора</a>
 						</label>
 
-						<button class="btn btn--primary form__send" type="submit">Отправить</button>
+						<button class="btn btn--primary service-order__send" type="submit">Отправить</button>
 					</form>
 
 					<button class="modal__close" type="button" data-modal-close>
