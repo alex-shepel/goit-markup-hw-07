@@ -1,3 +1,8 @@
+@import "./backdrop";
+@import "./modal";
+@import "./service-order";
+@import "./policy";
+
 .hero {
 	max-width: 1600px;
 	height: 600px;
@@ -10,6 +15,9 @@
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 		url("../images/hero-bg.jpg");
 	background-position: center;
+}
+
+.hero__container {
 	text-align: center;
 }
 

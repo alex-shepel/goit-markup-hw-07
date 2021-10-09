@@ -62,13 +62,69 @@
 
 		<main>
 			<section class="hero">
-				<div class="container">
+				<div class="container hero__container">
 					<h1 class="hero__title">
 						Эффективные решения <br />
 						для вашего бизнеса
 					</h1>
 					<button class="btn btn--primary" data-modal-open type="button">Заказать услугу</button>
 				</div>
+
+				<div class="backdrop is-hidden" data-modal>
+					<div class="modal">
+						<h2 class="modal__title">Оставьте данные и мы перезвоним</h2>
+
+						<form class="service-order">
+							<label class="service-order__label" for="name">Имя</label>
+							<div class="service-order__input-wrapper">
+								<input class="service-order__input" type="text" id="name" />
+								<svg class="service-order__icon">
+									<use href="./images/icons.svg#form-person"></use>
+								</svg>
+							</div>
+
+							<label class="service-order__label" for="phone">Телефон</label>
+							<div class="service-order__input-wrapper">
+								<input class="service-order__input" type="tel" id="phone" />
+								<svg class="service-order__icon">
+									<use href="./images/icons.svg#form-handset"></use>
+								</svg>
+							</div>
+
+							<label class="service-order__label" for="mail">Почта</label>
+							<div class="service-order__input-wrapper">
+								<input class="service-order__input" type="email" id="mail" />
+								<svg class="service-order__icon">
+									<use href="./images/icons.svg#form-envelop"></use>
+								</svg>
+							</div>
+
+							<label class="service-order__label" for="comment">Комментарий</label>
+							<textarea
+								class="service-order__input service-order__input--textarea"
+								id="comment"
+								placeholder="Введите текст"
+							></textarea>
+
+							<label class="policy">
+								<input class="policy__checkbox" type="checkbox" name="policy-confirmed" />
+								<span class="policy__check-icon"></span>
+								<span class="policy__label">Соглашаюсь с рассылкой и принимаю</span>
+								<a class="policy__link" href="">Условия договора</a>
+							</label>
+
+							<button class="btn btn--primary service-order__send" type="submit">Отправить</button>
+						</form>
+
+						<button class="modal__close" type="button" data-modal-close>
+							<svg height="18" width="18">
+								<use href="./images/icons.svg#form-close"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<script src="./js/modal.js"></script>
 			</section>
 
 			<section class="padding-unified">
@@ -346,58 +402,6 @@
 					</ul>
 				</div>
 			</section>
-
-			<div class="backdrop is-hidden" data-modal>
-				<div class="modal">
-					<h2 class="modal__title">Оставьте данные и мы перезвоним</h2>
-
-					<form class="service-order">
-						<label class="service-order__label" for="name">Имя</label>
-						<div class="service-order__input-wrapper">
-							<input class="service-order__input" type="text" id="name" />
-							<svg class="service-order__icon">
-								<use href="./images/icons.svg#form-person"></use>
-							</svg>
-						</div>
-
-						<label class="service-order__label" for="phone">Телефон</label>
-						<div class="service-order__input-wrapper">
-							<input class="service-order__input" type="tel" id="phone" />
-							<svg class="service-order__icon">
-								<use href="./images/icons.svg#form-handset"></use>
-							</svg>
-						</div>
-
-						<label class="service-order__label" for="mail">Почта</label>
-						<div class="service-order__input-wrapper">
-							<input class="service-order__input" type="email" id="mail" />
-							<svg class="service-order__icon">
-								<use href="./images/icons.svg#form-envelop"></use>
-							</svg>
-						</div>
-
-						<label class="service-order__label" for="comment">Комментарий</label>
-						<textarea class="service-order__input service-order__input--textarea" id="comment" placeholder="Введите текст"></textarea>
-
-						<label class="policy">
-							<input class="policy__checkbox" type="checkbox" name="policy-confirmed" />
-							<span class="policy__check-icon"></span>
-							<span class="policy__label">Соглашаюсь с рассылкой и принимаю</span>
-							<a class="policy__link" href="">Условия договора</a>
-						</label>
-
-						<button class="btn btn--primary service-order__send" type="submit">Отправить</button>
-					</form>
-
-					<button class="modal__close" type="button" data-modal-close>
-						<svg height="18" width="18">
-							<use href="./images/icons.svg#form-close"></use>
-						</svg>
-					</button>
-				</div>
-			</div>
-
-			<script src="./js/modal.js"></script>
 		</main>
 
 		<footer class="footer">
